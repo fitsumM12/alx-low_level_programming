@@ -8,7 +8,7 @@ int main(void)
 {
 	int i, e, g, h, op1, op2;
 
-	i = e = g = h= 48;
+	i = e = g = h = 48;
 
 	while (h < 58)
 	{
@@ -30,8 +30,10 @@ int main(void)
 						putchar(' ');
 						putchar(e);
 						putchar(i);
-						if(h == 57 && g == 56 && e == 57 && i == 57)
+						if (h == 57 && g == 56 && e == 57 && i == 57)
+						{
 							break;
+						}
 						putchar(',');
 						putchar(' ');
 					}
@@ -40,7 +42,8 @@ int main(void)
 				e++;
 			}
 			g++;
-		}h++;
+		}
+		h++;
 	}
 	putchar('\n');
 	return (0);
