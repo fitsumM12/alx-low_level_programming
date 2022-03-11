@@ -30,8 +30,13 @@ int main(void)
 						putchar(' ');
 						putchar(e);
 						putchar(i);
-						if (h == 57 && e == 57 && i == 57 && g == 56)
-							break;
+						if (h == 57 && e == 57)
+						{
+							if (i == 57 && g == 56)
+							{
+								break;
+							}
+						}
 						putchar(',');
 						putchar(' ');
 					}
