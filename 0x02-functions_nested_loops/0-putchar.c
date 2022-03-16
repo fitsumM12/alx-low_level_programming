@@ -1,14 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 /**
-* _putchar - writes the character c to stdout
-* @c: The character to print
+* main - This program prints the phrase Hello, World
 *
 * Return: Always 0 (Success)
-* On error, -1 is returned, and errno is set appropriately.
 */
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	char ch[] = "_putchar";
+	int i;
+
+	for (i=0; ch[i] != '\0'; i++)
+	{
+		_putchar(ch[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
