@@ -9,19 +9,20 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int len, i;
+	int count = 0, count2 = 0;
 
-	/* take the length of string dest */
-	for (len = 0; dest[len] != 0; len++)
+	while (*(dest + count) != '\0')
 	{
-
-	/* append src string to end of dest string */
-		for (i = 0; src[i] != 0; i++)
-		{
-			dest[len] = src[i];
-			len++;
-		}
+		count++;
 	}
 
+	while (count2 >= 0)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
+	}
 	return (dest);
 }
