@@ -4,7 +4,7 @@
 
 # Ignore object files
 *.o
-
+*.a
 # Ignore main files
 *-main.c
 
